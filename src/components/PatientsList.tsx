@@ -3,7 +3,7 @@ import PatientDetails from "./PatientDetails"
 
 export default function PatientsList() {
 
-    const patients = usePatientStore((state) => state.patients)
+    const patients = usePatientStore(state => state.patients)
     console.log(patients)
     
     return (
