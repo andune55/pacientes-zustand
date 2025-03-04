@@ -9,8 +9,10 @@ type PatientDetailsProps = {
 
 export default function PatientDetails({patient} : PatientDetailsProps) {
 
-    const deletePatient = usePatientStore((state) => state.deletePatient)
-    const getPatientById = usePatientStore((state) => state.getPatientById)
+    // const deletePatient = usePatientStore((state) => state.deletePatient)
+    // const getPatientById = usePatientStore((state) => state.getPatientById)
+
+    const {deletePatient, getPatientById} = usePatientStore()
 
     const handleClick = () => {
         deletePatient(patient.id)
